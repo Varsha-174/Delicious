@@ -1,0 +1,5369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4WLAaRZCcxxhszn2N7aFQNTXj_-wuCrXf3Wno-9izS4CcGZQDwvobLOwkUg5k8fAK7bk&usqp=CAU">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodicon</title>
+    <style>
+        *{
+            margin:0;
+        }
+        .navigation{
+            display: flex;
+            height:75px;
+            width: 100%;
+            background-color: rgb(106, 5, 72) ;
+            position:fixed;
+            top: 0;
+            z-index:100;
+            
+        }
+        .things a{
+            display: inline-block;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-around;
+            margin-left:1000px;
+            font-size:20px;
+            margin:10px;
+        }
+        .things a{
+                color: rgb(235, 226, 231);
+                text-decoration: none;
+               
+
+        }
+        .things:hover a{
+            filter: blur(2px);
+        }
+        .things a:hover{
+            color: rgb(195, 192, 19);
+            filter:blur(0px);
+        }
+        #home{
+            margin-left:50px;
+            font-size:19px;
+            
+        }
+        #home1{
+            margin-left:90px;
+            font-size:19px;    
+
+        }
+        .things img{
+            height:50px;
+            width:85px;
+            border-radius:50%;
+            margin-top:13px;
+        }
+        
+        .se{
+            height:60px;
+            width:100%;
+            background-color: rgba(213, 218, 218, 0.995);
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            justify-content: space-around;
+            
+            margin-top:90px;
+        }
+        .filters{
+            height:40px;
+            width:90px;
+            background-color:ghostwhite;
+            border:1px solid rgba(178, 179, 180, 0.92);
+            box-shadow: 3px solid grey inset;
+            display: inline-block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-top-left-radius:10px;
+            border-end-start-radius:10px;
+            border-end-end-radius:10px;
+            border-top-right-radius:10px;
+            color:grey;
+            margin-left:800px;
+        }
+        .cuisines{
+            height:40px;
+            width:90px;
+            background-color:ghostwhite;
+            border:1px solid rgba(178, 179, 180, 0.92);
+            box-shadow: 3px 3px 3px 3px solid grey inset;
+            display: inline-block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-top-left-radius:10px;
+            border-end-start-radius:10px;
+            border-end-end-radius:10px;
+            border-top-right-radius:10px;
+            color: grey;
+            margin-left:1100px;
+            margin-top:-50px;
+            
+        }
+        .filters select{
+            border:none;
+            width:21px;
+            color:rgb(123, 121, 121);
+        }
+        .cuisines select{
+            border:none;
+            width:21px;
+            color:rgb(123, 121, 121);
+        }
+        .brand{
+            background-image:url("bg1.jpg");
+            height:500px;
+            width:100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        .brand h1{
+            color: aliceblue;
+            
+        }
+        .brand img{
+            height:150px;
+            width:150px;
+            border-radius:50%;
+            margin:15px;
+            border:2px solid yellowgreen;
+        }
+        #i5{
+            margin-top:55px;
+
+        }
+        #i5:hover{
+            scale:1.2;
+        }
+        .veg{
+            background-image:url("veg.jpg");
+            height:850px;
+            width:100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        .vegbiriyani{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:330px;
+            margin-top:10px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .vegbiriyani img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .vegbiriyani p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .vegbiriyani h2{
+            margin-left:10px;
+        }
+        .rating1{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating1 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating1 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .vegbiriyani h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        }
+        .dosa{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:640px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .dosa img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .dosa p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .dosa h2{
+            margin-left:10px;
+        }
+        .rating2{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating2 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating2 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .dosa h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        }
+        .poori{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:20px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .poori img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .poori p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .poori h2{
+            margin-left:10px;
+        }
+        .rating3{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating3 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating3 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .poori h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        .gobi{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:950px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .gobi img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .gobi p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .gobi h2{
+            margin-left:10px;
+        }
+        .rating4{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating4 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating4 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .gobi h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        .mushroombiriyani{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:20px;
+            margin-top:50px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .mushroombiriyani img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .mushroombiriyani p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .mushroombiriyani h2{
+            margin-left:10px;
+        }
+        .rating5{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating5 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating5 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .mushroombiriyani h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        
+        .paneertikka{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:329px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .paneertikka img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .paneertikka p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .paneertikka h2{
+            margin-left:10px;
+        }
+        .rating6{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating6 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating6 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .paneertikka h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        .kofta{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:640px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .kofta img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .kofta p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .kofta h2{
+            margin-left:10px;
+        }
+        .rating7{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating7 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating7 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .kofta h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        .fullmeals{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:950px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .fullmeals img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .fullmeals p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .fullmeals h2{
+            margin-left:10px;
+        }
+        .rating8{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating8 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating8 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .fullmeals h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        .Non-Veg{
+            background-image:url("nonveg.jpg");
+            height:850px;
+            width:100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        .chickenbiriyani{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:330px;
+            margin-top:10px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .chickenbiriyani img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .chickenbiriyani p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .chickenbiriyani h2{
+            margin-left:10px;
+        }
+        .rating11{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating11 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating11 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .chickenbiriyani h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        }
+        .tandoori{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:640px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .tandoori img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .tandoori p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .tandoori h2{
+            margin-left:10px;
+        }
+        .rating12{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating12 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating12 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .tandoori h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        }
+        .fishfry{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:20px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .fishfry img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .fishfry p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .fishfry h2{
+            margin-left:10px;
+        }
+        .rating13{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating13 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating13 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .fishfry h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        .speghetti{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:950px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .speghetti img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .speghetti p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .speghetti h2{
+            margin-left:10px;
+        }
+        .rating14{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating14 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating14 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .speghetti h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        .pasta{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:20px;
+            margin-top:50px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .pasta img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .pasta p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .pasta h2{
+            margin-left:10px;
+        }
+        .rating15{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating15 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating15 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .pasta h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        
+        .shawarma{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:329px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .shawarma img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .shawarma p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .shawarma h2{
+            margin-left:10px;
+        }
+        .rating16{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating16 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating16 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .shawarma h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        .chickenfriedrice{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:640px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .chickenfriedrice img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .chickenfriedrice p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .chickenfriedrice h2{
+            margin-left:10px;
+        }
+        .rating17{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating17 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating17 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .chickenfriedrice h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        .soup{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:950px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .soup img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .soup p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .soup h2{
+            margin-left:10px;
+        }
+        .rating18{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating18 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating18 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .soup h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        .popularity{
+            background-image:url("bg2.jpg");
+            height:850px;
+            width:100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        .cake{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:330px;
+            margin-top:10px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .cake img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .cake p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .cake h2{
+            margin-left:10px;
+        }
+        .rating21{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating21 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating21 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .cake h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        }
+        .burger{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:640px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .burger img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .burger p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .burger h2{
+            margin-left:10px;
+        }
+        .rating22{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating22 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating22 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .burger h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        }
+        .pizza{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:20px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .pizza img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .pizza p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .pizza h2{
+            margin-left:10px;
+        }
+        .rating23{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating23 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating23 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .pizza h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        .kfc{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:950px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .kfc img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .kfc p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .kfc h2{
+            margin-left:10px;
+        }
+        .rating24{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating24 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating24 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .kfc h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        .biriyani{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:20px;
+            margin-top:50px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .biriyani img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .biriyani p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .biriyani h2{
+            margin-left:10px;
+        }
+        .rating25{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating25 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating25 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .biriyani h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        
+        .icecream{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:329px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .icecream img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .icecream p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .icecream h2{
+            margin-left:10px;
+        }
+        .rating26{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating26 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating26 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .icecream h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        .lassi{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:640px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .lassi img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .lassi p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .lassi h2{
+            margin-left:10px;
+        }
+        .rating27{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating27 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating27 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .lassi h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        .momo{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:950px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .momo img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .momo p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .momo h2{
+            margin-left:10px;
+        }
+        .rating28{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating28 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating28 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .momo h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        
+        .starters{
+            background-image:url("bg3.jpg");
+            height:850px;
+            width:100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        .mushroommanjurian{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:330px;
+            margin-top:10px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .mushroommanjurian img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .mushroommanjurian p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .mushroommanjurian h2{
+            margin-left:10px;
+        }
+        .rating31{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating31 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating31 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .mushroommanjurian h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        }
+        .chicken65{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:640px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .chicken65 img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .chicken65 p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .chicken65 h2{
+            margin-left:10px;
+        }
+        .rating32{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating32 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating32 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .chicken65 h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        }
+        .aloobonda{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:20px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .aloobonda img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .aloobonda p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .aloobonda h2{
+            margin-left:10px;
+        }
+        .rating33{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating33 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating33 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .aloobonda h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        .friedprawns{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:950px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .friedprawns img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .friedprawns p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .friedprawns h2{
+            margin-left:10px;
+        }
+        .rating34{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating34 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating34 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .friedprawns h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        .samosa{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:20px;
+            margin-top:50px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .samosa img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .samosa p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .samosa h2{
+            margin-left:10px;
+        }
+        .rating35{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating35 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating35 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .samosa h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        
+        .lemonchicken{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:329px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .lemonchicken img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .lemonchicken p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .lemonchicken h2{
+            margin-left:10px;
+        }
+        .rating36{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating36 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating36 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .lemonchicken h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        .roll
+        {
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:640px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .roll img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .roll p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .roll h2{
+            margin-left:10px;
+        }
+        .rating37{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating37 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating37 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .roll h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        .chillichicken{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:950px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .chillichicken img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .chillichicken p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .chillichicken h2{
+            margin-left:10px;
+        }
+        .rating38{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating38 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating38 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .chillichicken h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        .dessert{
+            background-image:url("bg4.jpg");
+            height:850px;
+            width:100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        .gulabjamun{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:330px;
+            margin-top:10px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .gulabjamun img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .gulabjamun p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .gulabjamun h2{
+            margin-left:10px;
+        }
+        .rating41{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating41 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating41 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .gulabjamun h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        }
+        .kulfi{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:640px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .kulfi img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .kulfi p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .kulfi h2{
+            margin-left:10px;
+        }
+        .rating42{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating42 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating42 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .kulfi h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        }
+        .ice{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:20px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .ice img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .ice p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .ice h2{
+            margin-left:10px;
+        }
+        .rating43{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating43 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating43 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .ice h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        .cake1{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:950px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .cake1 img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .cake1 p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .cake1 h2{
+            margin-left:10px;
+        }
+        .rating44{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating44 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating44 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .cake1 h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        .kheer{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:20px;
+            margin-top:50px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .kheer img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .kheer p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .kheer h2{
+            margin-left:10px;
+        }
+        .rating45{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating45 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating45 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .kheer h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        
+        .halwa{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:329px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .halwa img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .halwa p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .halwa h2{
+            margin-left:10px;
+        }
+        .rating46{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating46 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating46 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .halwa h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        .rasagula
+        {
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:640px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .rasagula img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .rasagula p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .rasagula h2{
+            margin-left:10px;
+        }
+        .rating47{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating47 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating47 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .rasagula h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        .mousse{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:950px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .mousse img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .mousse p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .mousse h2{
+            margin-left:10px;
+        }
+        .rating48{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating48 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating48 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .mousse h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        .beverages{
+            background-image:url("bg5.jpg");
+            height:850px;
+            width:100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        .buttermilk{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:330px;
+            margin-top:10px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .buttermilk img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .buttermilk p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .buttermilk h2{
+            margin-left:10px;
+        }
+        .rating51{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating51 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating51 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .buttermilk h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        }
+        .watermelon{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:640px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .watermelon img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .watermelon p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .watermelon h2{
+            margin-left:10px;
+        }
+        .rating52{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating52 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating52 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .watermelon h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        }
+        .orange{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:20px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .orange img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .orange p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .orange h2{
+            margin-left:10px;
+        }
+        .rating53{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating53 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating53 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .orange h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        .tender{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:950px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .tender img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .tender p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .tender h2{
+            margin-left:10px;
+        }
+        .rating54{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating54 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating54 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .tender h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        .badham{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:20px;
+            margin-top:50px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .badham img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .badham p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .badham h2{
+            margin-left:10px;
+        }
+        .rating55{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating55 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating55 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .badham h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        
+        .chocolate{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:329px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .chocolate img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .chocolate p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .chocolate h2{
+            margin-left:10px;
+        }
+        .rating56{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating56 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating56 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .chocolate h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        .mango
+        {
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:640px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .mango img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .mango p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .mango h2{
+            margin-left:10px;
+        }
+        .rating57{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating57 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating57 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .mango h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        .mojito{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:950px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .mojito img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .mojito p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .mojito h2{
+            margin-left:10px;
+        }
+        .rating58{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating58 p{
+            color: rgb(255, 247, 247);
+            margin-top:1px;
+        }
+        .rating58 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .mojito h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        .chinese{
+            background-image:url("bg6.jpg");
+            height:850px;
+            width:100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        .schezwan{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:330px;
+            margin-top:10px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .schezwan img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .schezwan p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .schezwan h2{
+            margin-left:10px;
+        }
+        .rating61{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating61 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating61 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .schezwan h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        }
+        .ghee{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:640px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .ghee img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .ghee p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .ghee h2{
+            margin-left:10px;
+        }
+        .rating62{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating62 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating62 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .ghee h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        }
+        .redbean{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:20px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .redbean img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .redbean p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .redbean h2{
+            margin-left:10px;
+        }
+        .rating63{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating63 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating63 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .redbean h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        .babycorn{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:950px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .babycorn img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .babycorn p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .babycorn h2{
+            margin-left:10px;
+        }
+        .rating64{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating64 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating64 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .babycorn h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        .tang{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:20px;
+            margin-top:50px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .tang img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .tang p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .tang h2{
+            margin-left:10px;
+        }
+        .rating65{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating65 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating65 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .tang h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        
+        .chowman{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:329px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .chowman img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .chowman p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .chowman h2{
+            margin-left:10px;
+        }
+        .rating66{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating66 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating66 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .chowman h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        .chao
+        {
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:640px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .chao img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .chao p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .chao h2{
+            margin-left:10px;
+        }
+        .rating67{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating67 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating67 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .chao h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        .dimsum{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:950px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .dimsum img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .dimsum p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .dimsum h2{
+            margin-left:10px;
+        }
+        .rating68{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating68 p{
+            color: rgb(255, 247, 247);
+            margin-top:1px;
+        }
+        .rating68 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .dimsum h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        }
+        .south{
+            background-image:url("bg7.jpg");
+            height:850px;
+            width:100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        .idli{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:330px;
+            margin-top:10px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .idli img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .idli p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .idli h2{
+            margin-left:10px;
+        }
+        .rating71{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating71 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating71 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .idli h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        }
+        .egg{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:640px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .egg img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .egg p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .egg h2{
+            margin-left:10px;
+        }
+        .rating72{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating72 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating72 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .egg h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        }
+        .lollipop{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:20px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .lollipop img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .lollipop p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .lollipop h2{
+            margin-left:10px;
+        }
+        .rating73{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating73 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating73 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .lollipop h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        .ambur{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:950px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .ambur img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .ambur p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .ambur h2{
+            margin-left:10px;
+        }
+        .rating74{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating74 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating74 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .ambur h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        .vaangibath{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:20px;
+            margin-top:50px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .vaangibath img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .vaangibath p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .vaangibath h2{
+            margin-left:10px;
+        }
+        .rating75{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating75 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating75 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .vaangibath h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        
+        .curdrice{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:329px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .curdrice img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .curdrice p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .curdrice h2{
+            margin-left:10px;
+        }
+        .rating76{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating76 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating76 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .curdrice h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        .vegpulao
+        {
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:640px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .vegpulao img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .vegpulao p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .vegpulao h2{
+            margin-left:10px;
+        }
+        .rating77{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating77 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating77 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .vegpulao h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        .masaladosa{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:950px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .masaladosa img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .masaladosa p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .masaladosa h2{
+            margin-left:10px;
+        }
+        .rating78{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating78 p{
+            color: rgb(255, 247, 247);
+            margin-top:1px;
+        }
+        .rating78 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .masaladosa h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        }
+        .north{
+            background-image:url("bg8.jpg");
+            height:850px;
+            width:100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        .chole{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:330px;
+            margin-top:10px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .chole img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .chole p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .chole h2{
+            margin-left:10px;
+        }
+        .rating81{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating81 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating81 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .chole h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        }
+        .rogan{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:640px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .rogan img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .rogan p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .rogan h2{
+            margin-left:10px;
+        }
+        .rating82{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating82 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating82 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .rogan h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        }
+        .nihari{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:20px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .nihari img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .nihari p{
+            color:rgb(252, 243, 243);
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .nihari h2{
+            margin-left:10px;
+        }
+        .rating83{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating83 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating83 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .nihari h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        .paratha{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:950px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .paratha img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .paratha p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .paratha h2{
+            margin-left:10px;
+        }
+        .rating84{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating84 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating84 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .paratha h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        .butter{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:20px;
+            margin-top:50px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .butter img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .butter p{
+            color:rgb(255, 251, 251);
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .butter h2{
+            margin-left:10px;
+        }
+        .rating85{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating85 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating85 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .butter h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        
+        .rajma{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:329px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .rajma img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .rajma p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .rajma h2{
+            margin-left:10px;
+        }
+        .rating86{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating86 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating86 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .rajma h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        .paani
+        {
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:640px;
+            margin-top:-350px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .paani img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .paani p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .paani h2{
+            margin-left:10px;
+        }
+        .rating87{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating87 p{
+            color: rgb(245, 240, 240);
+            margin-top:1px;
+        }
+        .rating87 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .paani h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        } 
+        .pav{
+            height:350px;
+            width:300px;
+            background-color: aliceblue;
+            margin-left:950px;
+            margin-top:-750px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .pav img{
+            height:200px;
+            width:250px;
+            margin:24px;
+            border-top-right-radius:10px;
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+        }
+        .pav p{
+            color:gray;
+            margin-top:5px;
+            margin-left:10px;
+        }
+        .pav h2{
+            margin-left:10px;
+        }
+        .rating88{
+            height:30px;
+            width:50px;
+            background-color: rgb(4, 58, 40);
+            display: flex;
+            align-items: center;
+            border-top-right-radius:5px;
+            border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            margin-left:230px;
+            margin-top:-50px;
+
+        }
+        .rating88 p{
+            color: rgb(255, 247, 247);
+            margin-top:1px;
+        }
+        .rating88 span{
+            color: rgb(245, 240, 240);
+            height:1px;
+            width:1px;
+            margin-top:-20px;
+            font-size:20px;
+            
+        }
+        .pav h4{
+            margin-left:250px;
+            color: rgb(76, 73, 73);
+            margin-top:3px;
+        }
+        .flag{
+            height:40px;
+            width:90px;
+            background-color: rgb(244, 244, 250);
+            border:1px solid gray;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            margin-left:900px;
+            margin-top:-35px;
+        }
+        .flag img{
+            height:20px;
+            width:30px;
+            margin-top:7px;
+            margin-left:5px;
+        }
+        .flag p{
+            margin-left:49px;
+            margin-top:-25px;
+        }
+        .lang{
+            height:40px;
+            width:110px;
+            background-color: rgb(244, 244, 250);
+            border:1px solid gray;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            margin-left:1000px;
+            margin-top:-41px;
+        }
+        .flag span{
+            height:20px;
+            width:30px;
+            margin-top:15px;
+            margin-left:10px;
+        }
+        .lang p{
+            margin-left:40px;
+            margin-top:-25px;
+        }
+        .a1{
+            margin-left:30px;
+        }
+        .a2 p{
+            font-size:15px;
+            /* align-items: center; */
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+            display: inline-block;
+            margin:50px;
+        }
+        .a8 p{
+            font-size:15px;
+            color: gray;
+            /* align-items: center; */
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+            display: inline-block;
+            margin:55px;
+            /* margin-top:-80px; */
+            
+           
+        }
+        .a12 p{
+            
+            margin-left:17px;
+        }
+        #gg{
+            height:40px;
+            width:70px;
+            margin-left:1100px;
+            position: relative;
+            top:-160px;
+            right:50px;
+        }
+        #ap{
+            height:40px;
+            width:80px;
+            position: relative;
+            top:-160px;
+            right:50px;
+        }
+        #con{
+            font-size:14px;
+            color: gray;
+            margin:30px;
+        }
+        .a8 img{
+            height:30px;
+            width: 30px;
+        }
+        #fb{
+            margin-left:105px;
+            margin-top:5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+         <div class="things">
+            <img src="delicious.jpg" alt="">
+            <a href="#about"  id="home1">About</a>
+            <a href="#top" >Top Brands</a>
+            <a href="#vveg"  >Veg</a>
+            <a href="#vnonveg" >Top Nonveg</a>
+            <a href="#vpopularity"  >Popularity</a>
+            <a href="#vstarter" >Starters</a>
+            <a href="#vdessert"  >Dessert</a>
+            <a href="#vbeverage" >Beverages</a>
+            <a href="#macro" >Chinese</a>
+            <a href="#vadai"  >South</a>
+            <a href="#ni" >North</a>
+         </div>
+    </div>
+    <div class="se">
+        
+        <div class="filters">Filters<select name="" id="">
+                <option value="">--Select--</option>
+                <a href=""><option value="">Veg</option></a>
+                <a href=""><option value="">Popularity</option></a>
+                <a href=""><option value="">Non-Veg</option></a>
+                <a href=""><option value="">Starters</option></a>
+                <a href=""><option value="">Dessert</option></a>
+                <a href=""><option value="">Beverages</option></a>
+                
+            </select>
+        </div>
+    </div>   
+        <div class="cuisines">Cuisines 
+            
+            
+            <select name="" id="">
+                <option value="">--Select--</option>
+                <a href=""><option value="">Chinese cuisines</option></a>
+                <a href=""><option value="">South Indian cuisines</option></a>
+                <a href=""><option value="">North Indian cuisines</option></a>
+                
+            </select>
+        </div>
+            
+    </div>
+    </div><br>
+    <h1><b>Best Food from Top Brands</b></h1><br>
+    <div class="brand" id="top"><br>
+        <img src="meghana.avif" alt="" id="i1">
+        <img src="Dominos.avif" alt="" id="i2">
+        <img src="a2b.avif" alt="" id="i3">
+        <img src="empire.avif" alt="" id="i4"><br>
+        <img src="kfc.avif" alt="" id="i5">
+        <img src="freshmenu.avif" alt="" id="i6">
+        <img src="leon.avif" alt="">
+        <img src="truffles.avif" alt="">
+    </div><br>
+    <h1><b>Veg Foods</b></h1><br>
+    <div class="veg" id="vveg"><br>
+        
+        <div class="vegbiriyani">
+            <img src="vegbiriyani.avif" alt="">
+            <h2><b>Asha Tiffins</b></h2>
+            <p>Veg Biriyani</p>
+            <div class="rating1"><p><b>4.2</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;300</h4></div>
+        <div class="dosa">
+            <img src="dosa.avif" alt="">
+            <h2><b>Krishnam Veg</b></h2>
+            <p>Cheese Dosa</p>
+            <div class="rating2"><p><b>3.9</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;100</h4></div> 
+        <div class="poori">
+            <img src="poori.avif" alt="">
+            <h2><b>Mast Marathi</b></h2>
+            <p>Poori Masala</p>
+            <div class="rating3"><p><b>3.9</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;100</h4></div>       
+        <div class="gobi">
+            <img src="gobi.avif" alt="">
+            <h2><b>Sri Udupi Grand</b></h2>
+            <p>Gobi Manjurian</p>
+            <div class="rating4"><p><b>4.1</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;150</h4></div> 
+        <div class="mushroombiriyani">
+            <img src="mushroombiriyani.avif" alt="">
+            <h2><b>Anjappar</b></h2>
+            <p>Mushroom Biriyani</p>
+            <div class="rating5"><p><b>4.5</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;300</h4></div> 
+        <div class="paneertikka">
+            <img src="paneertikka.avif" alt="">
+            <h2><b>Narmada Chain</b></h2>
+            <p>Paneer Tikka</p>
+            <div class="rating6"><p><b>4.3</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;350</h4></div> 
+        <div class="kofta">
+            <img src="kofta.avif" alt="">
+            <h2><b>Panjabi Chaap</b></h2>
+            <p>Kofta Curry</p>
+            <div class="rating7"><p><b>4.8</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;450</h4></div> 
+        <div class="fullmeals">
+            <img src="fullmeals.avif" alt="">
+            <h2><b>A2B</b></h2>
+            <p>Full Meals</p>
+            <div class="rating8"><p><b>4.8</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;250</h4></div>       
+        
+    </div><br>
+    <h1><b>Non-Veg Foods</b></h1><br>
+    <div class="Non-Veg" id="vnonveg"><br>
+       
+        <div class="chickenbiriyani">
+            <img src="chickenbiriyani.avif" alt="">
+            <h2><b>Chichaba's Taj</b></h2>
+            <p>Non-Veg Biriyani</p>
+            <div class="rating11"><p><b>4.2</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;400</h4></div>
+        <div class="tandoori">
+            <img src="tandoori.avif" alt="">
+            <h2><b>Rotti Walla</b></h2>
+            <p>Tandoori</p>
+            <div class="rating12"><p><b>3.9</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;300</h4></div> 
+        <div class="fishfry">
+            <img src="fishfry.avif" alt="">
+            <h2><b>Bob's Kitchen</b></h2>
+            <p>Fish Fry</p>
+            <div class="rating13"><p><b>4.0</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;200</h4></div>       
+        <div class="speghetti">
+            <img src="chickenspegatti.avif" alt="">
+            <h2><b>Call Me Chow</b></h2>
+            <p>Chicken Speghetti</p>
+            <div class="rating14"><p><b>4.0</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;150</h4></div> 
+        <div class="pasta">
+            <img src="pasta.avif" alt="">
+            <h2><b>Say Cheese!</b></h2>
+            <p>Chicken Pasta</p>
+            <div class="rating15"><p><b>4.0</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;300</h4></div> 
+        <div class="shawarma">
+            <img src="shawarma.avif" alt="">
+            <h2><b>Tandoorwaala</b></h2>
+            <p>Chicken Shawarma</p>
+            <div class="rating16"><p><b>4.1</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;350</h4></div> 
+        <div class="chickenfriedrice">
+            <img src="chickenfriedrice.avif" alt="">
+            <h2><b>Kannur Food Point</b></h2>
+            <p>Chicken Fried Rice</p>
+            <div class="rating17"><p><b>4.8</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;150</h4></div> 
+        <div class="soup">
+            <img src="soup.avif" alt="">
+            <h2><b>Hakka Box</b></h2>
+            <p>Chicken Manchow Soup</p>
+            <div class="rating18"><p><b>4.3</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;400</h4></div>       
+        
+    </div><br>
+    <h1><b>Popularity</b></h1><br>
+    <div class="popularity" id="vpopularity"><br>
+       
+        <div class="cake">
+            <img src="cake.avif" alt="">
+            <h2><b>Chef Bakers</b></h2>
+            <p>Cake</p>
+            <div class="rating21"><p><b>4.2</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;200</h4></div>
+        <div class="burger">
+            <img src="burger.avif" alt="">
+            <h2><b>McDonalad's</b></h2>
+            <p>Burger</p>
+            <div class="rating22"><p><b>3.9</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;300</h4></div> 
+        <div class="pizza">
+            <img src="pizza.avif" alt="">
+            <h2><b>Domino's Pizza</b></h2>
+            <p>Cheese Pizza</p>
+            <div class="rating23"><p><b>4.0</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;200</h4></div>       
+        <div class="kfc">
+            <img src="kfc combo.avif" alt="">
+            <h2><b>KFC</b></h2>
+            <p>KFC Combo</p>
+            <div class="rating24"><p><b>4.0</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;150</h4></div> 
+        <div class="biriyani">
+            <img src="biriyani.avif" alt="">
+            <h2><b>Nandhana Palace</b></h2>
+            <p>Biriyani</p>
+            <div class="rating25"><p><b>4.0</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;300</h4></div> 
+        <div class="icecream">
+            <img src="icecream.avif" alt="">
+            <h2><b>Polar Bear</b></h2>
+            <p>Ice Cream</p>
+            <div class="rating26"><p><b>4.1</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;350</h4></div> 
+        <div class="lassi">
+            <img src="lassi.avif" alt="">
+            <h2><b>Lassi Shop</b></h2>
+            <p>Lassi</p>
+            <div class="rating27"><p><b>4.8</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;150</h4></div> 
+        <div class="momo">
+            <img src="momo.avif" alt="">
+            <h2><b>Wow! Momo</b></h2>
+            <p>Momos</p>
+            <div class="rating28"><p><b>4.3</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;400</h4></div>       
+        
+    </div>
+    <br>
+    <h1><b>Starters</b></h1><br>
+    <div class="starters" id="vstarter"><br>
+       
+        <div class="mushroommanjurian">
+            <img src="mushroommanjurian.avif" alt="">
+            <h2><b>Chef's Cap</b></h2>
+            <p>Mushroom Manjurian</p>
+            <div class="rating31"><p><b>4.2</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;200</h4></div>
+        <div class="chicken65">
+            <img src="chicken65.avif" alt="">
+            <h2><b>Ambur Star</b></h2>
+            <p>Chicken 65</p>
+            <div class="rating32"><p><b>4.2</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;200</h4></div> 
+        <div class="aloobonda">
+            <img src="bonda.avif" alt="">
+            <h2><b>The Filter Coffee</b></h2>
+            <p>Aloo Bonda</p>
+            <div class="rating33"><p><b>4.4</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;150</h4></div>       
+        <div class="friedprawns">
+            <img src="prwan.avif" alt="">
+            <h2><b>Bangalore Mandarin</b></h2>
+            <p>Fried Prawns</p>
+            <div class="rating34"><p><b>4.1</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;200</h4></div> 
+        <div class="samosa">
+            <img src="samosa.avif" alt="">
+            <h2><b>Snacks Corner</b></h2>
+            <p>Samosa</p>
+            <div class="rating35"><p><b>4.0</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;150</h4></div> 
+        <div class="lemonchicken">
+            <img src="lemon.avif" alt="">
+            <h2><b>Sizzling Szechuan</b></h2>
+            <p>Lemon Chicken</p>
+            <div class="rating36"><p><b>4.1</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;250</h4></div> 
+        <div class="roll">
+            <img src="roll.avif" alt="">
+            <h2><b>Empire Restaurant</b></h2>
+            <p>Chicken Roll</p>
+            <div class="rating37"><p><b>4.8</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;250</h4></div> 
+        <div class="chillichicken">
+            <img src="chillichicken.avif" alt="">
+            <h2><b>Beijing Bites</b></h2>
+            <p>Chilli Chicken</p>
+            <div class="rating38"><p><b>4.3</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;200</h4></div>       
+        
+    </div>
+    <br>
+    <h1><b>Desserts</b></h1><br>
+    <div class="dessert" id="vdessert"><br>
+       
+        <div class="gulabjamun">
+            <img src="gulabjamun.avif" alt="">
+            <h2><b>Haldiram's dessert</b></h2>
+            <p>Gulab Jamun</p>
+            <div class="rating41"><p><b>4.4</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;150</h4></div>
+        <div class="kulfi">
+            <img src="kulfi.avif" alt="">
+            <h2><b>La Kulfi</b></h2>
+            <p>Kulfi</p>
+            <div class="rating42"><p><b>4.5</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;150</h4></div> 
+        <div class="ice">
+            <img src="ice.avif" alt="">
+            <h2><b>Kwality Wall's </b></h2>
+            <p>Ice Cream</p>
+            <div class="rating43"><p><b>4.4</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;150</h4></div>       
+        <div class="cake1">
+            <img src="blackforestcake.avif" alt="">
+            <h2><b>Brownie Circles</b></h2>
+            <p>Black Forest Cake</p>
+            <div class="rating44"><p><b>4.3</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;100</h4></div> 
+        <div class="kheer">
+            <img src="kheer.avif" alt="">
+            <h2><b>Yum Yum Kolkatta</b></h2>
+            <p>Kheer</p>
+            <div class="rating45"><p><b>4.0</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;200</h4></div> 
+        <div class="halwa">
+            <img src="halwa.avif" alt="">
+            <h2><b>Kanti Sweets</b></h2>
+            <p>Halwa</p>
+            <div class="rating46"><p><b>4.4</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;150</h4></div> 
+        <div class="rasagula">
+            <img src="rasagula.avif" alt="">
+            <h2><b>Al Taj</b></h2>
+            <p>Rasagula</p>
+            <div class="rating47"><p><b>4.8</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;150</h4></div> 
+        <div class="mousse">
+            <img src="mouse.avif" alt="">
+            <h2><b>Caterspoint</b></h2>
+            <p>Mousse</p>
+            <div class="rating48"><p><b>4.5</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;500</h4></div>       
+        
+    </div>
+    <br>
+    <h1><b>Beverages</b></h1><br>
+    <div class="beverages" id="vbeverage"><br>
+       
+        <div class="buttermilk">
+            <img src="buttermilk.avif" alt="">
+            <h2><b>Nandhana Palace</b></h2>
+            <p>Buttermilk</p>
+            <div class="rating51"><p><b>4.1</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;150</h4></div>
+        <div class="watermelon">
+            <img src="watermelon.avif" alt="">
+            <h2><b>Savoury</b></h2>
+            <p>Watermelon Juice</p>
+            <div class="rating52"><p><b>4.0</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;150</h4></div> 
+        <div class="orange">
+            <img src="orange.avif" alt="">
+            <h2><b>Juice Junction </b></h2>
+            <p>Orange Juice</p>
+            <div class="rating53"><p><b>4.5</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;150</h4></div>       
+        <div class="tender">
+            <img src="tender.jpg" alt="">
+            <h2><b>Juice Mela</b></h2>
+            <p>Tender Coconut Juice</p>
+            <div class="rating54"><p><b>4.3</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;100</h4></div> 
+        <div class="badham">
+            <img src="badham.jpg" alt="">
+            <h2><b>Gulugulu</b></h2>
+            <p>Badham Juice</p>
+            <div class="rating55"><p><b>4.0</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;200</h4></div> 
+        <div class="chocolate">
+            <img src="chocolate.avif" alt="">
+            <h2><b>Frozen</b></h2>
+            <p>Chocolate Milkshake</p>
+            <div class="rating56"><p><b>4.4</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;150</h4></div> 
+        <div class="mango">
+            <img src="mango.avif" alt="">
+            <h2><b>Orbis Restaurant</b></h2>
+            <p>Mango Milkshake</p>
+            <div class="rating57"><p><b>4.8</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;150</h4></div> 
+        <div class="mojito">
+            <img src="mojito.avif" alt="">
+            <h2><b>Seigneur</b></h2>
+            <p>Mojito</p>
+            <div class="rating58"><p><b>4.5</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;500</h4></div>       
+        
+    </div>
+    <br>
+    <h1><b>Chinese Cuisines</b></h1><br>
+    <div class="chinese" id="macro"><br>
+       
+        <div class="schezwan">
+            <img src="schezwan.avif" alt="">
+            <h2><b>Chowman</b></h2>
+            <p>Schezwan Noodles</p>
+            <div class="rating61"><p><b>4.1</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;250</h4></div>
+        <div class="ghee">
+            <img src="gheerice.avif" alt="">
+            <h2><b>Empire Restaurant</b></h2>
+            <p>Ghee Rice & Curry</p>
+            <div class="rating62"><p><b>4.0</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;150</h4></div> 
+        <div class="redbean">
+            <img src="soup1.avif" alt="">
+            <h2><b>Beijing Bites</b></h2>
+            <p>Red Bean Soup</p>
+            <div class="rating63"><p><b>4.5</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;150</h4></div>       
+        <div class="babycorn">
+            <img src="babycorn.avif" alt="">
+            <h2><b>Empire Restaurant</b></h2>
+            <p>Babycorn Manjurian</p>
+            <div class="rating64"><p><b>4.3</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;200</h4></div> 
+        <div class="tang">
+            <img src="tang.avif" alt="">
+            <h2><b>Green Peppers</b></h2>
+            <p>Tang Yuan</p>
+            <div class="rating65"><p><b>4.0</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;200</h4></div> 
+        <div class="chowman">
+            <img src="chowman.avif" alt="">
+            <h2><b>MISU</b></h2>
+            <p>Chawman</p>
+            <div class="rating66"><p><b>4.4</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;150</h4></div> 
+        <div class="chao">
+            <img src="chao.avif" alt="">
+            <h2><b>Wok China</b></h2>
+            <p>Chao Fan</p>
+            <div class="rating67"><p><b>4.8</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;150</h4></div> 
+        <div class="dimsum">
+            <img src="dimsum.webp" alt="">
+            <h2><b>Lucky Chan</b></h2>
+            <p>Dimsum</p>
+            <div class="rating68"><p><b>4.5</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;500</h4></div>       
+        
+    </div>
+    <br>
+    <h1><b>South Indian Cuisines</b></h1><br>
+    <div class="south" id="vadai"><br>
+       
+        <div class="idli">
+            <img src="idli.avif" alt="">
+            <h2><b>New Udupi Grand</b></h2>
+            <p>Idly</p>
+            <div class="rating71"><p><b>4.1</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;50</h4></div>
+        <div class="egg">
+            <img src="egg.avif" alt="">
+            <h2><b>Macha Singh</b></h2>
+            <p>Egg Biriyani</p>
+            <div class="rating72"><p><b>4.0</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;150</h4></div> 
+        <div class="lollipop">
+            <img src="lollipop.avif" alt="">
+            <h2><b>Beijing Bites</b></h2>
+            <p>Chicken Lollipop</p>
+            <div class="rating73"><p><b>4.5</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;150</h4></div>       
+        <div class="ambur">
+            <img src="ambur.avif" alt="">
+            <h2><b>Ambur Biriyani</b></h2>
+            <p>Ambur Dum Biriyani</p>
+            <div class="rating74"><p><b>4.3</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;200</h4></div> 
+        <div class="vaangibath">
+            <img src="vaangibath.avif" alt="">
+            <h2><b>Puliyogare Point</b></h2>
+            <p>Vaangibath</p>
+            <div class="rating75"><p><b>4.0</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;200</h4></div> 
+        <div class="curdrice">
+            <img src="curdrice.avif" alt="">
+            <h2><b>Aromas</b></h2>
+            <p>Curd Rice</p>
+            <div class="rating76"><p><b>4.4</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;150</h4></div> 
+        <div class="vegpulao">
+            <img src="vegpulao.avif" alt="">
+            <h2><b>Biriyani Canteen</b></h2>
+            <p>Veg Pulao</p>
+            <div class="rating77"><p><b>4.8</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;150</h4></div> 
+        <div class="masaladosa">
+            <img src="masaladosa.avif" alt="">
+            <h2><b>Shuchi Ruchi</b></h2>
+            <p>Masala Dosa</p>
+            <div class="rating78"><p><b>4.5</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;100</h4></div>       
+        
+    </div>
+    <br>
+    <h1><b>North Indian Cuisines</b></h1><br>
+    <div class="north" id="ni"><br>
+       
+        <div class="chole">
+            <img src="chole.avif" alt="">
+            <h2><b>gopaljee</b></h2>
+            <p>Chole Bhature</p>
+            <div class="rating81"><p><b>4.1</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;150</h4></div>
+        <div class="rogan">
+            <img src="rogan.avif" alt="">
+            <h2><b>Salt</b></h2>
+            <p>Rogan Josh</p>
+            <div class="rating82"><p><b>4.0</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;150</h4></div> 
+        <div class="nihari">
+            <img src="nihari.avif" alt="">
+            <h2><b>Dabha</b></h2>
+            <p>Nihari</p>
+            <div class="rating73"><p><b>4.5</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;150</h4></div>       
+        <div class="butter">
+            <img src="butterchicken.avif" alt="">
+            <h2><b>Royal Restaurant</b></h2>
+            <p>Butter Chicken</p>
+            <div class="rating84"><p><b>4.3</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;200</h4></div> 
+        <div class="paratha">
+            <img src="paratha.avif" alt="">
+            <h2><b>Namaste</b></h2>
+            <p>Aloo Paratha</p>
+            <div class="rating85"><p><b>4.0</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;200</h4></div> 
+        <div class="rajma">
+            <img src="rajma.avif" alt="">
+            <h2><b>Delhi Highway</b></h2>
+            <p>Rajma Masala</p>
+            <div class="rating86"><p><b>4.4</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;150</h4></div> 
+        <div class="paani">
+            <img src="paani.jpg" alt="">
+            <h2><b>Vijayalakshmi</b></h2>
+            <p>Pani Poori</p>
+            <div class="rating87"><p><b>4.8</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;150</h4></div> 
+        <div class="pav">
+            <img src="pav paji.avif" alt="">
+            <h2><b>Restaurant 1179</b></h2>
+            <p>Pav Bhaji</p>
+            <div class="rating88"><p><b>4.5</b></p><span class="material-symbols-outlined">
+                star
+                </span>
+            </div>
+           <h4>&#8377;100</h4></div>       
+        
+    </div><br><br><br><br><br>
+    <h1 class="a1" id="deli">Delicious</h1>
+    <div class="flag"><img src="flag.png" alt=""><p>India</p></div>
+    <div class="lang"><span class="material-symbols-outlined">
+        language
+        </span><p>English</p></div>
+    <div class="a2">
+        <p class="a3"><b>About Delicious</b></p>
+        <p class="a4"><b>Deliverse</b</p>
+        <p class="a5"><b>For Restaurants</b></p>
+        <p class="a6"><b>Learn More</b></p>
+        <p class="a7"><b>Social Links</b></p>
+    </div>
+    <div class="a8" id="about">
+        <p class="a11">Who We Are</p>
+        <p class="a12">Delicious</p>
+        <p class="a13">Partner</p>
+        <p class="a14">Privacy</p>
+        <img src="fb.png" alt="" id="fb">
+        <img src="twitter.png" alt="">
+        <img src="utube.png" alt="">
+        <img src="linkedin.jpg" alt="">
+        <img src="insta.webp" alt="">
+    </div>
+    <br><br>
+    <hr>
+    <p id="con">By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2023 © Zomato™ Ltd. All rights reserved.</p>
+    <img src="gg.png" alt="" id="gg">
+    <img src="app.png" alt="" id="ap">
+    
+</body>
+</html>
